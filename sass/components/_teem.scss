@@ -1,0 +1,72 @@
+.comand {
+  margin-top: 0px;
+}
+.teem {
+  background-color: #f5f4fa;
+}
+.teem-list {
+  display: flex;
+  align-items: center;
+}
+.teem-list .name-item + .name-item {
+  margin-left: 30px;
+}
+.name-item {
+  display: block;
+  text-align: center;
+
+  background: $white-color;
+  border-radius: 0px 0px 4px 4px;
+}
+.name-item:hover {
+  box-shadow: $shadow-black;
+}
+.names {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $primary-text-color;
+}
+.profession {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $small-text-color;
+}
+/* Соцмережі */
+
+.networks-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-bottom: 24px;
+  text-decoration: none;
+}
+.link1 {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $svg-color;
+  background-color: $white-color;
+}
+
+.icon-social {
+  fill: currentColor;
+}
+
+.link1:hover {
+  color: $white-color;
+  background-color: $accent-color;
+}
+
+.networks-links .social-links + .social-links {
+  margin-left: 10px;
+}

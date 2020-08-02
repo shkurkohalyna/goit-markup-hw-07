@@ -1,7 +1,10 @@
 $primary-text-color: #212121;
 $small-text-color: #757575;
 $accent-color: #2196f3;
-$primary-white-color: #ffffff;
+$white-color: #ffffff;
 $svg-color: #afb1b8;
 
-$timing-function: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+$shadow-black: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 1px 3px rgba(0, 0, 0, 0.12);
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$transmision-value: 250ms $timing-function;
