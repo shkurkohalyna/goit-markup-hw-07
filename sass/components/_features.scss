@@ -1,3 +1,6 @@
+.features-container {
+  @extend %container;
+}
 .features {
   display: flex;
   flex-direction: row;
@@ -28,9 +31,10 @@
 
 .features-icon {
   fill: $primary-text-color;
-}
-.features-icon:hover {
-  fill: $accent-color;
+
+  &:hover {
+    fill: $accent-color;
+  }
 }
 
 .features-card:nth-child(4n) {
@@ -46,19 +50,11 @@
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 .features-text {
   text-align: justify;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   color: $small-text-color;
-}
-.section-title {
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 94px;
-  margin-bottom: 50px;
 }

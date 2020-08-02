@@ -1,13 +1,13 @@
-.cont-item {
+.contacts-item {
   display: flex;
   align-items: center;
 }
 
-.kompany-contacts .cont-item + .cont-item {
+.contacts-item + .contacts-item {
   margin-left: 30px;
 }
 
-.kompany-contacts {
+.contacts {
   display: flex;
   margin: auto;
 
@@ -16,13 +16,12 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  &:hover {
+    color: $accent-color;
+  }
 }
-.kompany-contacts .item + .item {
-  margin-left: 30px;
-}
-.kompany-contacts:hover {
-  color: $accent-color;
-}
+
 .mail {
   text-decoration: none;
   color: $small-text-color;

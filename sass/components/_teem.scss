@@ -1,5 +1,8 @@
-.comand {
+.teem-title {
   margin-top: 0px;
+}
+.teem-container {
+  @extend %container;
 }
 .teem {
   background-color: #f5f4fa;
@@ -17,11 +20,13 @@
 
   background: $white-color;
   border-radius: 0px 0px 4px 4px;
+
+  &:hover {
+    box-shadow: $shadow-black;
+  }
 }
-.name-item:hover {
-  box-shadow: $shadow-black;
-}
-.names {
+
+.name-title {
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
@@ -29,7 +34,7 @@
   line-height: 1.2;
   color: $primary-text-color;
 }
-.profession {
+.name-profession {
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -56,15 +61,15 @@
   border-radius: 50%;
   color: $svg-color;
   background-color: $white-color;
+
+  &:hover {
+    color: $white-color;
+    background-color: $accent-color;
+  }
 }
 
 .icon-social {
   fill: currentColor;
-}
-
-.link1:hover {
-  color: $white-color;
-  background-color: $accent-color;
 }
 
 .networks-links .social-links + .social-links {
