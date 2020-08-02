@@ -1,11 +1,11 @@
-@import "./components/html";
-@import "./utils/variables";
 @import "./base/normalize";
+@import "./utils/variables";
+@import "./components/html";
 @import "./base/font";
 @import "./utils/placeholders";
 @import "./utils/mixins";
 @import "./utils/list";
-
+@import "./components/portfolio";
 @import "./components/page-header";
 @import "./components/logo";
 @import "./components/nav";
@@ -16,4 +16,3 @@
 @import "./components/teem";
 @import "./components/clients";
 @import "./components/footer";
-@import "./components/portfolio";

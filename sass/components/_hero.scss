@@ -55,9 +55,10 @@
     background-color: $accent-color;
   }
 
-  &:active{
+  &:active {
     border: 2px solid $accent-color;
   }
+}
 /* модалка */
 .backdrop {
   @extend %is-hiden;
@@ -75,7 +76,6 @@
   transition: opacity 250ms;
   z-index: 100;
 }
-
 
 .modal {
   box-shadow: $shadow-black;
@@ -231,7 +231,7 @@ textarea {
 
 /* close-button */
 
-.close-button {  
+.close-button {
   position: absolute;
   padding: 0;
   top: 0;
@@ -244,15 +244,16 @@ textarea {
   transition: $transmision-value;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     transform: scale(1.1);
   }
-  
+
   &:focus {
-  fill: $accent-color;
-  border: transparent;
+    fill: $accent-color;
+    border: transparent;
   }
 }
+
 .icon-modal-close {
   display: block;
   width: 100%;

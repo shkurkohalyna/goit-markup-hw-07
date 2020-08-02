@@ -2,7 +2,7 @@
   background-color: $white-color;
   color: $primary-text-color;
 }
-.container .header {
-  justify-content: space-between;
+.header-container {
+  @extend %container;
   height: 80px;
 }
