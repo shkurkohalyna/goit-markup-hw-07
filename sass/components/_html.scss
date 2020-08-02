@@ -8,8 +8,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
+  background-color: $white-color;
+  color: $primary-text-color;
   font-family: $font-family;
   letter-spacing: 0.03em;
 }

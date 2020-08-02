@@ -27,8 +27,40 @@
   letter-spacing: 0.06em;
   color: $white-color;
 }
+// button
+.button-primary {
+  @extend %button;
+
+  &:hover,
+  &:focus {
+    font-weight: 700;
+    color: $white-color;
+    background-color: $accent-color;
+  }
+
+  &:active {
+    border: 2px solid $accent-color;
+  }
+}
+.button-secondary {
+  @extend %button;
+  padding: 10px 29px;
+
+  &:hover,
+  &:focus {
+    font-weight: 700;
+    border: 3px solid $accent-color;
+    border-color: transparent;
+    color: $white-color;
+    background-color: $accent-color;
+  }
+
+  &:active{
+    border: 2px solid $accent-color;
+  }
 /* модалка */
 .backdrop {
+  @extend %is-hiden;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -43,10 +75,7 @@
   transition: opacity 250ms;
   z-index: 100;
 }
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
+
 
 .modal {
   box-shadow: $shadow-black;
@@ -136,12 +165,6 @@ textarea {
   outline: none;
   border-color: $accent-color;
 }
-/* .form-field:focus-within > .icon-form {
-  fill: var(--accent-color);
-}
-.form-field:focus-within > .form-label {
-  transform: translateY(-50%);
-} */
 .comment-form + .text-area-modal {
   width: 448px;
   height: 120px;
@@ -208,32 +231,30 @@ textarea {
 
 /* close-button */
 
-.close-button {
-  padding: 0;
+.close-button {  
   position: absolute;
+  padding: 0;
   top: 0;
   right: 0;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: $white-color;
-  /* background-image: url(../images/close-black.svg);
-  background-position: center;
-  background-origin: border-box; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: $transmision-value;
   cursor: pointer;
-}
-.close-button:hover {
-  transform: scale(1.1);
-}
 
+  &:hover{
+    transform: scale(1.1);
+  }
+  
+  &:focus {
+  fill: $accent-color;
+  border: transparent;
+  }
+}
 .icon-modal-close {
   display: block;
   width: 100%;
   height: 100%;
-}
-.close-button:focus {
-  fill: $accent-color;
-  border: transparent;
 }
