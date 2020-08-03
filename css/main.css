@@ -311,7 +311,7 @@ h4 {
   pointer-events: none;
 }
 
-.filtr-container, .our-works, .header-container, .features-container, .direction-container, .teem-container, .client-container, .develop-container {
+.filtr-container, .our-works, .header-container, .features-container, .direction-container, .teem-container, .client-container, .footer-container, .develop-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

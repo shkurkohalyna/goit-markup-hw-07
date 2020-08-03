@@ -9,6 +9,9 @@
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+.footer-container {
+  @extend %container;
+}
 .logo-footer {
   font-family: $font-logo;
   font-weight: 700;
