@@ -306,12 +306,12 @@ h4 {
   border-color: transparent;
 }
 
-.textexamples, .backdrop {
+.backdrop {
   opacity: 0;
   pointer-events: none;
 }
 
-.filtr-container, .our-works, .header-container, .features-container, .direction-container, .teem-container, .client-container, .footer-container, .develop-container {
+.filtr-section, .header-container, .features-container, .direction-container, .teem-container, .client-container, .footer-container, .develop-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,10 +324,10 @@ h4 {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-.list {
+.list, .our-works, .filtr-container {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -349,7 +349,7 @@ li {
   display: list-item;
 }
 
-.filtr-container {
+.filtr-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,6 +359,23 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.our-works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.filtr-container {
   margin-bottom: 56px;
 }
 
@@ -381,14 +398,6 @@ li {
 .filtr-button:active {
   color: #ffffff;
   background-color: #2196f3;
-}
-
-.our-works {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .work-item {
@@ -458,9 +467,9 @@ li {
 .card-content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding-top: 20px;
@@ -493,6 +502,11 @@ li {
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
+}
+
+.textexamples.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .textexamples:hover {

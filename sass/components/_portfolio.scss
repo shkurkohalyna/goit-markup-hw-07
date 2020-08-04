@@ -1,10 +1,21 @@
-.filtr-container {
-  @extend %container;
+.filtr-section {
+padding-top: 94px;
+  padding-bottom: 94px;
+}
+.our-works {
+  @extend %container;s
+  @extend %list;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 56px;
+  flex-wrap: wrap;
 }
+
+.filtr-container {
+  @extend %list;
+  @extend %container;
+  margin-bottom: 56px;
+ 
 .filtr-button {
   @extend %button;
   padding: 6px 22px;
@@ -28,11 +39,6 @@
   }
 }
 
-.our-works {
-  @extend %container;
-  display: flex;
-  flex-wrap: wrap;
-}
 .work-item {
   display: block;
   width: 370px;
@@ -89,9 +95,9 @@
 }
 .card-content {
   box-sizing: border-box;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid $white-color;
+  border-right: 1px solid $white-color;
+  border-left: 1px solid $white-color;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 
@@ -118,14 +124,16 @@
   letter-spacing: 0.03em;
 }
 .textexamples {
-  @extend %is-hidden;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   color: $white-color;
-
-  &:hover {
-    opacity: 1;
-    background-color: rgba(33, 150, 243, 0.9);
-  }
+}
+.textexamples.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.textexamples:hover {
+  opacity: 1;
+  background-color: rgba(33, 150, 243, 0.9);
 }
