@@ -1,20 +1,22 @@
-.filtr-section {
-padding-top: 94px;
+.filtr {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .our-works {
+  display: flex;
+  flex-wrap: wrap;
   @extend %container;
   @extend %list;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
-.filtr-container {
-  @extend %list;
+.filtr-container {  
+  display: flex; 
   @extend %container;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 56px;
+  @extend %list;
+
  
 .filtr-button {
   @extend %button;
