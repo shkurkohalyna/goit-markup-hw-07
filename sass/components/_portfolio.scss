@@ -1,23 +1,23 @@
 .filtr {
+  @extend %container;
+  display: block;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .our-works {
-  display: flex;
-  flex-wrap: wrap;
   @extend %container;
   @extend %list;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.filtr-container {  
-  display: flex; 
+.filtr-container {
   @extend %container;
+  @extend %list;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 56px;
-  @extend %list;
-
- 
+}
 .filtr-button {
   @extend %button;
   padding: 6px 22px;
@@ -112,7 +112,7 @@
   color: $primary-text-color;
   text-decoration: none;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
