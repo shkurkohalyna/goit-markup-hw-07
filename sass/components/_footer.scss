@@ -1,5 +1,18 @@
 .footer {
   background-color: #2f303a;
+
+  &-container {
+    @extend %container;
+  }
+
+  &-link {
+    margin-top: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
 }
 .section-footer {
   display: flex;
@@ -9,17 +22,7 @@
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.footer-container {
-  @extend %container;
-}
-.logo-footer {
-  font-family: $font-logo;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
-  color: $white-color;
-}
+
 .adress {
   margin-top: 20px;
   margin-bottom: 9px;
@@ -28,14 +31,7 @@
   line-height: 1.71;
   color: $white-color;
 }
-.footer-link {
-  margin-top: 9px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
+
 .login {
   display: block;
   margin-bottom: 21px;
@@ -56,10 +52,15 @@
 .social-links_footer > .link1 {
   color: $white-color;
   background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
 
   &:hover {
     background-color: $accent-color;
   }
+}
+
+.social-links_footer:last-child > .link1 {
+  margin-right: 0px;
 }
 .develop-container {
   @extend %container;
@@ -83,26 +84,28 @@
 .singing {
   display: flex;
 }
-.footer-form {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
+.footer {
+  &-form {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 12px;
+  }
 
-  border-radius: 4px;
-  margin-right: 12px;
-}
-.footer-label {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+  &-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-  letter-spacing: 0.01em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer-input {
-  width: 358px;
-  height: 50px;
-  margin: 0;
-  padding: 15px 16px;
-  background-color: #2f303a;
-  border-radius: 4px;
+  &-input {
+    width: 358px;
+    height: 50px;
+    margin: 0;
+    padding: 15px 16px;
+    background-color: #2f303a;
+    border-radius: 4px;
+  }
 }

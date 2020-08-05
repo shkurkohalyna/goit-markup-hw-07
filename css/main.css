@@ -345,6 +345,14 @@ h4 {
   color: #212121;
 }
 
+.logo, .logo-footer {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
 li {
   display: list-item;
 }
@@ -521,22 +529,16 @@ li {
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
   color: #212121;
-  -webkit-animation: none;
-          animation: none;
-  text-decoration: none;
   margin-right: 85px;
 }
 
 .logo-web {
   color: #2196f3;
+}
+
+.logo-footer {
+  color: #ffffff;
 }
 
 .main-nav {
@@ -734,7 +736,7 @@ li {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   min-width: 528px;
   min-height: 581px;
-  padding: 40px;
+  padding: 0px;
   background-color: #ffffff;
 }
 
@@ -743,21 +745,21 @@ textarea {
 }
 
 /*--- form -----*/
-.form-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1, 15;
-  text-align: center;
-  color: #212121;
-  margin-bottom: 30px;
-}
-
 .form {
   width: 528px;
   height: 581px;
   padding: 40px;
   background: #ffffff;
   border-radius: 4px;
+}
+
+.form-title {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1, 15;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 30px;
 }
 
 .form-field {
@@ -902,8 +904,8 @@ textarea {
 .close-button {
   padding: 0;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -1244,6 +1246,15 @@ textarea {
   background-color: #2f303a;
 }
 
+.footer-link {
+  margin-top: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
 .section-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1259,15 +1270,6 @@ textarea {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.logo-footer {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
-  color: #ffffff;
-}
-
 .adress {
   margin-top: 20px;
   margin-bottom: 9px;
@@ -1275,15 +1277,6 @@ textarea {
   font-size: 14px;
   line-height: 1.71;
   color: #ffffff;
-}
-
-.footer-link {
-  margin-top: 9px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
 }
 
 .login {
@@ -1309,10 +1302,15 @@ textarea {
 .social-links_footer > .link1 {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
 }
 
 .social-links_footer > .link1:hover {
   background-color: #2196f3;
+}
+
+.social-links_footer:last-child > .link1 {
+  margin-right: 0px;
 }
 
 .developed {

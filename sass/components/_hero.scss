@@ -90,7 +90,7 @@
   transition: transform $transmision-value;
   min-width: 528px;
   min-height: 581px;
-  padding: 40px;
+  padding: 0px;
   background-color: $white-color;
 }
 textarea {
@@ -98,14 +98,6 @@ textarea {
 }
 
 /*--- form -----*/
-.form-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1, 15;
-  text-align: center;
-  color: $primary-text-color;
-  margin-bottom: 30px;
-}
 
 .form {
   width: 528px;
@@ -113,6 +105,15 @@ textarea {
   padding: 40px;
   background: $white-color;
   border-radius: 4px;
+
+  &-title {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1, 15;
+    text-align: center;
+    color: $primary-text-color;
+    margin-bottom: 30px;
+  }
 
   &-field {
     position: relative;
@@ -242,8 +243,8 @@ textarea {
 .close-button {
   padding: 0;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
